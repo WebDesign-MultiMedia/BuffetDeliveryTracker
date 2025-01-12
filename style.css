@@ -3,7 +3,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body{
-        background-color: #0a0a23;
+        background-color: navy;
         color: white;
     }
 
@@ -11,6 +11,9 @@
     
     h1{
         text-align: center;
+        font-family: "Rubik Vinyl", serif;
+        font-weight: 400;
+        font-style: normal;
 
     }
 
@@ -40,17 +43,20 @@
 
     #letsTrack{
          position: relative;
-         background-color: whitesmoke;
-         color: red;
+         background-color: black;
+         color: white;
          top: 5em;
-         height: 60px;
+         height: 67px;
+         width: 60%;
          font-weight: bolder;
-         border-radius: 10%;
-         border: 5px solid red;
+         border-radius: 5%;
+         border: 2px solid white;
          /* filter: drop-shadow(5px 5px 10px white); */
-         font-family:'Courier New', Courier, monospace;
-         font-size: 1.1em;
+         font-size: 1.5em;
          display: none;
+         font-family: "Rubik Vinyl", serif;
+         font-weight: 400;
+         font-style: normal;
     }
 
 
@@ -66,19 +72,29 @@
       flex-direction: column;
       align-items: center;
         position: relative;
+        color: white;
         top: 0em;
         font-size:5vw;
+       
     }
     
+    textarea{
+        background-color: lightcyan;
+    }
+
     input{
         width: 40%;
         height: 25px;
+        background-color: lightblue;
     }
 
     button{
         width: 4cm;
         height: 40px;
-        border: 2px solid red;
+        background-color: green;
+        color: white;
+        font-size: 1.4em;
+        font-family:monospace;
     }
 }
 
