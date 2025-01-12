@@ -1,0 +1,112 @@
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: #0a0a23;
+        color: white;
+    }
+
+    /* TOP HEADER */
+    
+    h1{
+        text-align: center;
+
+    }
+
+ 
+    .topContainer{
+        display: none;
+        background-color: navy;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #topHeader{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo{
+        width: 100%;
+        filter: drop-shadow(10px 10px 10px white);
+        display: none;
+    }
+
+    #letsTrack{
+         position: relative;
+         background-color: whitesmoke;
+         color: red;
+         top: 5em;
+         height: 60px;
+         font-weight: bolder;
+         border-radius: 10%;
+         border: 5px solid red;
+         /* filter: drop-shadow(5px 5px 10px white); */
+         font-family:'Courier New', Courier, monospace;
+         font-size: 1.1em;
+         display: none;
+    }
+
+
+    /* FORM */
+
+    #CustomerDetails{
+        display: none;
+    }
+
+    .CustomerDetails{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+        position: relative;
+        top: 0em;
+        font-size:5vw;
+    }
+    
+    input{
+        width: 40%;
+        height: 25px;
+    }
+
+    button{
+        width: 4cm;
+        height: 40px;
+        border: 2px solid red;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        display: none;
+        background-color: red;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        display: none;
+    }
+}
