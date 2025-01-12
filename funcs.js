@@ -66,7 +66,7 @@ smtBtn.addEventListener("click", ()=>{
 
     gSheetSubmit();
 
-    // swal("Here's the title!", "...and here's the text!");
+    swal("Submitted Successfully ", "keep up the tracking!");
 
     setTimeout(() => {
         location.reload(); 
