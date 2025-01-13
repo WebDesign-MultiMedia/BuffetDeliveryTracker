@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b46095725.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="invoice.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="invoiceTitle">INVOICE</h1>
+
+    <!-- 
+
+        Items
+        Quantities
+        Requests
+        Cost
+        Payment
+    -->
+
+    <!-- <input type="text" id="searchName" placeholder="Enter Name">
+    <button onclick="fetchDataDisplay()">Search</button> -->
+
+    <main id="invoiceContainer">
+    
+
+        <section >
+            <h2>Buffet Lucia's <br> Fiesta Mexicana</h2> 
+            <!-- <p><i class="fa-regular fa-location-dot"></i> 1980 UnionPort Rd</p>  -->
+             <a href="https://maps.app.goo.gl/Bx2W5GzuaLoykv9a9"><i class="fa-regular fa-location-dot"></i> : Bronx NY, 10462</a>
+            <a id="addy" href="tel:+3476862462"><i class="fa-solid fa-mobile-notch"></i> : (347) 686 - 2462</a> 
+        </section>
+
+        <section id="dates">
+            <h3>DATE</h3>
+        </section>
+        
+        <section id="billTo"> 
+                <h3>BILL TO:</h3>
+                 <!-- <table id="dataTable2">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>  -->
+            </section>
+
+        <section id="desciption">
+            <h3>DESCRIPTION:</h3>
+            <table id="dataTable">
+                <thead>
+                <tr></th>
+                    <th>Items</th>
+                    <th>Cost</th>
+                    <th>Payment</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+          
+        </section>
+        <section id="amount">   
+            <h3>TOTAL:</h3>
+            
+        </section>
+    </main>
+    
+    <script src="invoice.js"></script>
+</body>
+</html>
