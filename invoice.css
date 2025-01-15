@@ -28,29 +28,6 @@
         top: -40px;
     }
 
-    #dates{
-        position: relative;
-        left: 70%;
-        width: 50%;
-    }
-
-    #billTo{
-        position: relative;
-        left: 0%;
-        width: 60%;
-
-    }
-
-    #amount{
-        position: relative;
-        left: 0%;
-        width: 50%;
-    }
-
-    #desciption{
-        width: 80%;
-    }
-
     section p, a{
         color: red;
         position: relative;
@@ -59,19 +36,21 @@
         text-decoration: none;
     }
 
-    
-   
-    #LogoInvoice{
-        width: 50%;
+    #date{
+        color: aqua;
+        display: flex;
+        justify-content: end;
+        align-items: end;
     }
 
-    table{
-        width: 100%;
-        height: auto;
-
+    #dataTable1{
+        position: relative;
+        right: 30%;
     }
+
+
     th{
-        background-color: white;
+        background-color: red;
         color: black;
         font-size: 1.2em;
     }

@@ -20,7 +20,7 @@
  
     .topContainer{
         display: none;
-        background-color: navy;
+        background-image: linear-gradient(navy, black);
         position: absolute;
         top: 0;
         left: 0;
@@ -39,6 +39,8 @@
         width: 100%;
         filter: drop-shadow(10px 10px 10px white);
         display: none;
+        position: relative;
+        top: 55px;
     }
 
     #letsTrack{
@@ -50,7 +52,6 @@
          width: 60%;
          font-weight: bolder;
          border-radius: 5%;
-         border: 2px solid white;
          /* filter: drop-shadow(5px 5px 10px white); */
          font-size: 1.5em;
          display: none;
@@ -73,42 +74,62 @@
       align-items: center;
         position: relative;
         color: white;
-        top: 0em;
+        top: 1em;
         font-size:5vw;
        
     }
     
+
     textarea{
         background-color: lightcyan;
     }
 
     input{
         width: 40%;
-        height: 25px;
+        height: 20px;
         background-color: lightblue;
     }
 
-    button{
-        width: 4cm;
-        height: 40px;
+    #sbBtn{
+        width: 40%;
+        height:40px;
+        border: 1px solid white;
+        border-radius: 5%;
         background-color: green;
         color: white;
         font-size: 1.4em;
         font-family:monospace;
+        position: relative;
+        right: 0;
+        display: block;
+    }
+
+    button{
+     display: none;
     }
 
     select{
         width: 41%;
     }
 
+    span{
+        font-size: 4.4vw;
+        background-color: red;
+        border: 1px solid yellow;
+        display: none;
+    }
+
+
     /* LOG SHEETS */
+  
     #logExcelSheetG{
-        background-color: rgb(109, 108, 108);
-        width: 20%;
-        height: 60px;
+        display: none;
+    }
+    .excelLog{
+        width: 15%;
+        height:9%;
         position: absolute;
-        top: 29em;
-        left: 0;
+        top: 25em;
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
@@ -116,13 +137,19 @@
     }
     #contOne{
         font-size: 2.3em;
+        padding: 20px;
     }
 
     .fa-file-spreadsheet{
         color:rgb(12, 155, 12);
-        position: relative;
-        top: 3px;
-        filter: drop-shadow(5px 5px 3px black);
+        top: 8px;
+        font-size: 14vw;
+    }
+
+    .fa-file-invoice{
+        color: white;
+        top: 8px;
+        font-size: 13.5vw;
     }
 
 

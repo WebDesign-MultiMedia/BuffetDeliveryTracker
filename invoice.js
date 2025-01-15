@@ -23,49 +23,49 @@ async function singleData(name) {
      const name = document.getElementById("searchName").value;
      const data = await singleData(name);
 
+        // TABLE ONE
+    const tableDate = document.getElementById('dataTable1').querySelector("tbody");
+    tableDate.innerHTML = "";
+
+    data.forEach(entry => {
+        const rowDate = tableDate.insertRow();
+        rowDate.insertCell().textContent = entry.Date || "";
+    })
+
+        // TABLE TWO
      const tableBody0 = document.getElementById("dataTable2").querySelector("tbody");
      tableBody0.innerHTML= "";
 
     data.forEach(entry => {
         const row = tableBody0.insertRow();
+        // row.insertCell().textContent = entry.Date || "";
         row.insertCell().textContent = entry.Name || "";
         row.insertCell().textContent = entry.Address || "";
         row.insertCell().textContent = entry.Contact || "";
+        // row.insertCell().textContent = entry.Items || "";
+        // row.insertCell().textContent = entry.Cost || "";
+        // row.insertCell().textContent = entry.Payment || "";
     })
 
-    //  const billToDiv = document.getElementById("billTo");
-    //  const billToDetails = billToDiv.querySelector("div");
-    //  billToDetails.innerHTML = "";
+     const entry = data[0];
 
-    //  if (data.length === 0) {
-    //     billToDetails.innerHTML = "No Data Found";
-    //     return ;
-    //  }
 
-    //  const entry = data[0];
+    // const tableBody = document.getElementById("dataTable").querySelector("tbody");
+    // tableBody.innerHTML = "";
 
-    //  billToDetails.innerHTML = `
-    //     <p>Name: ${entry.Name || "N/A"}</p>
-    //     <p>Address: ${entry.Address || "N/A"}</p>
-    //     <p>Contact: ${entry.Contact || "N/A"}</p>
-    //  `
+    // if (data.length === 0) {
+    //     const row = tableBody.insertRow();
+    //     const cell =  row.insertCell();
 
-    const tableBody = document.getElementById("dataTable").querySelector("tbody");
-    tableBody.innerHTML = "";
+    //     cell.colSpan = 9;
+    //     cell.textContent = "No data found";
+    //     return;
+    // }
 
-    if (data.length === 0) {
-        const row = tableBody.insertRow();
-        const cell =  row.insertCell();
-
-        cell.colSpan = 9;
-        cell.textContent = "No data found";
-        return;
-    }
-
-    data.forEach(entry => {
-        const row = tableBody.insertRow();
-        row.insertCell().textContent = entry.Items || "";
-        row.insertCell().textContent = entry.Cost || "";
-        row.insertCell().textContent = entry.Payment || "";
-    });
+    // data.forEach(entry => {
+    //     const row = tableBody.insertRow();
+    //     row.insertCell().textContent = entry.Items || "";
+    //     row.insertCell().textContent = entry.Cost || "";
+    //     row.insertCell().textContent = entry.Payment || "";
+    // });
 }

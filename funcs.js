@@ -9,9 +9,9 @@ function showElement(appear, delay){
     }, delay);
 }
 
-showElement(title,2000);
-showElement(imgLogo, 4000);
-showElement(topBtn, 6000);
+showElement(title,1000);
+showElement(imgLogo, 1000);
+showElement(topBtn, 1000);
 
 // BOTTON
 const body = document.getElementById('bodyPg');
@@ -28,9 +28,11 @@ function btnStyles(bkg, color, border){
 }
 
 const btnClick  = document.getElementById('letsTrack');
-btnClick.addEventListener('click', ()=> btnCli('none', 'center', 'black', 'flex'));
+btnClick.addEventListener('click', ()=> btnCli('none', 'center', 'navy', 'flex'));
 
 function btnCli(display, justifyContent, background, dflex){
+    const logSheets = document.getElementById('logExcelSheetG');
+    logSheets.style.display = 'block'
     imgLogo.style.display = display;
     title.style.display = display;
     cusform.style.display = dflex;
@@ -41,10 +43,21 @@ function btnCli(display, justifyContent, background, dflex){
 
 
 
+
 // SUBMIT FORM 
 document.addEventListener("DOMContentLoaded", ()=>{
 const smtBtn = document.getElementById("sbBtn");
-smtBtn.addEventListener("click", ()=>{
+
+smtBtn.addEventListener('mouseenter', ()=> btnHover('darkgreen','white'));
+smtBtn.addEventListener('mouseleave', ()=> btnHover('green','white'))
+
+function btnHover(bkgrnd, texColor){
+    smtBtn.style.background = bkgrnd;
+    smtBtn.style.color = texColor;
+}
+
+
+smtBtn.addEventListener('click', async (event)=>{
 
     event.preventDefault();
 
@@ -80,27 +93,35 @@ smtBtn.addEventListener("click", ()=>{
         }
     }
 
-    gSheetSubmit();
+    await gSheetSubmit();
 
-<<<<<<< HEAD
-     swal("Here's the title!", "...and here's the text!");
-=======
-    swal("Submitted Successfully ", "keep up the tracking!");
->>>>>>> d705cde2984285962e71b59d57f20a66827798fa
-
-    setTimeout(() => {
-        location.reload(); 
-     }, 1000);
+     swal("Submitted Successfully!", "...Keep on tracking!");
+     document.getElementById('CustomerDetails').reset();
+    // setTimeout(() => {
+    //    
+    // }, 3000);
 });
 });
 
+
+        // GOOGLE SHEET LOG SIDE BAR
 const gExcel = document.getElementById('gSheet');
+const invoiceSheet = document.getElementById('invoiSheet')
 
-gExcel.addEventListener('mouseenter', () => setStyles('black', 'white'));
-gExcel.addEventListener('mouseleave', () => setStyles('green', 'black'));
+invoiceSheet.addEventListener('mouseenter', () => invStyle('red', 'white'));
+invoiceSheet.addEventListener('mouseleave', () => invStyle('white', 'red'));
+gExcel.addEventListener('mouseenter', () => setStyles('red', 'white'));
+gExcel.addEventListener('mouseleave', () => setStyles('white', 'red'));
 gExcel.addEventListener('click', () => setStyles('blue', 'white'));
 
+function invStyle(clr, sColor) {
+    invoiceSheet.style.color = clr;
+    invoiceSheet.style.filter = `drop-shadow(1px 1px 0px ${sColor})`;
+    
+}
 function setStyles(color, shadowColor){
     gExcel.style.color = color;
-    gExcel.style.filter = `drop-shadow(5px 5px 3px ${shadowColor})`;
+    gExcel.style.filter = `drop-shadow(1px 1px 0px ${shadowColor})`;
 }
+
+

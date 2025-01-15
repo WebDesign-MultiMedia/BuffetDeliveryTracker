@@ -20,8 +20,7 @@
         Payment
     -->
 
-    <!-- <input type="text" id="searchName" placeholder="Enter Name">
-    <button onclick="fetchDataDisplay()">Search</button> -->
+
 
     <main id="invoiceContainer">
     
@@ -32,48 +31,61 @@
              <a href="https://maps.app.goo.gl/Bx2W5GzuaLoykv9a9"><i class="fa-regular fa-location-dot"></i> : Bronx NY, 10462</a>
             <a id="addy" href="tel:+3476862462"><i class="fa-solid fa-mobile-notch"></i> : (347) 686 - 2462</a> 
         </section>
-
-        <section id="dates">
-            <h3>DATE</h3>
+     
+        <section id="date">
+            <h3>DATE:</h3>
+            <table id="dataTable1">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
         </section>
         
         <section id="billTo"> 
                 <h3>BILL TO:</h3>
-                 <!-- <table id="dataTable2">
+                 <table id="dataTable2">
                     <thead>
                     <tr>
                         <th>Name</th>
                         <th>Address</th>
-                        <th>Contact</th>
+                        <th>Contact</th>    
                     </tr>
                     </thead>
                     <tbody>
 
                     </tbody>
-                </table>  -->
+                </table> 
             </section>
 
-        <section id="desciption">
+         <section id="desciption">
             <h3>DESCRIPTION:</h3>
-            <table id="dataTable">
+            <table id="dataTable2">
                 <thead>
-                <tr></th>
-                    <th>Items</th>
-                    <th>Cost</th>
-                    <th>Payment</th>
+                <tr>
+                <th>Items</th>
+                <th>Cost</th>
+                <th>Payment</th>
                 </tr>
                 </thead>
                 <tbody>
+
                 </tbody>
-            </table>
-          
+            </table> 
+        <!--  
         </section>
         <section id="amount">   
             <h3>TOTAL:</h3>
             
-        </section>
+        </section> -->
     </main>
-    
+    <input type="text" id="searchName" placeholder="Enter Name">
+    <button onclick="fetchDataDisplay()">Search</button>
+    <section id="dates"> 
     <script src="invoice.js"></script>
 </body>
 </html>

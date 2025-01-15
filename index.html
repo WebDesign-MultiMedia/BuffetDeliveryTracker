@@ -25,20 +25,38 @@
  
     
     <form for="cust" class="CustomerDetails" id="CustomerDetails">
-<<<<<<< HEAD
         </div>
-        <label for="Date" class="form-label">Date</label>
-=======
         <label for="Date">Date</label>
->>>>>>> d705cde2984285962e71b59d57f20a66827798fa
         <input type="date" id="Date" name="Date" >
+        <span id="err" class="err-msgDate">
+            <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
+            Required !
+            <i class="fa-sharp fa-solid fa-arrow-up"></i>
+        </span>
         <!-- Customter Details -->
         <label for="cust">Name:</label>
         <input type="text" placeholder="Client Name" id="Name" name="Name" >
+        <!-- <div id="validErr">
+            <div id="ErrMessage">
+                <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
+                <span>Required !</span>
+            </div> -->
+        </div>
         <label for="Contact">Contact Info</label>
         <input type="number" placeholder="Client Phone #" id="Contact" name="Contact" >
+        <span id="errContact" class="errMsg">
+            <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
+            Required !
+            <i class="fa-sharp fa-solid fa-arrow-up"></i>
+        </span>
         <label for="Address">Delivery Address:</label>
         <input type="text" placeholder="Client Address" id="Address" name="Address" >
+        <span>
+            <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
+            Required !
+            <i class="fa-sharp fa-solid fa-arrow-up"></i>
+        </span>
+        </div>
         <!-- Order Detailas -->
         <label for="Items">Items Purchased:</label>
         <textarea cols="20" rows="5" id="Items" name="Items">
@@ -49,25 +67,40 @@
         <label for="Requests">Special Request:</label>
         <textarea cols="20" rows="5" id="Requests" name="Requests"></textarea>
         <label for="Cost">Total Cost:</label>
-        <input type="text" placeholder="$" id="Cost" name="Cost" required>
-        <!-- Payment Method -->
+        <input type="text" placeholder="$" id="Cost" name="Cost" >
+            <span>
+                <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
+                Required !
+                <i class="fa-sharp fa-solid fa-arrow-up"></i>
+            </span>
+            <!-- Payment Method -->
         <label for="Payment">Payment Method</label>
-        <select id="Payment" name="Payment" required>
+        <select id="Payment" name="Payment" >
             <option value=""></option>
             <option value="Cash">Cash</option>
             <option value="Zelle">Zelle</option>
         </select>
+        <span>
+            <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
+            Required !
+            <i class="fa-sharp fa-solid fa-arrow-up"></i>
+        </span>
          <!-- Submit Button -->
           <br>
-          <button type="submit" value="Submit" id="sbBtn">Submit</button>
-          <div id="logExcelSheetG">
-            <a href="invoiceTem.html">Invoice </a>
-            <div id="contOne">
-                <!-- <h3>Log Sheets</h3> -->
-                <a href="https://docs.google.com/spreadsheets/d/1foMCHxncVcHoJQwxRVPxTM3o64zIDyUJZErwtLLu5qo/edit?usp=sharing"><i id="gSheet" class="fa-sharp-duotone fa-regular fa-file-spreadsheet"></i></a>
-             </div>
-    </form>
 
+          <button type="submit" value="Submit" id="sbBtn">Submit</button>
+    </form>
+    <!-- GOOGLE SHEET LOG SIDE BAR  -->
+    <div id="logExcelSheetG" class="excelLog">
+         <!-- <a href="invoiceTem.html">Invoice </a>  -->
+        <div id="contOne">
+             <!-- <h3>Log Sheets</h3>  -->
+            <a href="https://docs.google.com/spreadsheets/d/1foMCHxncVcHoJQwxRVPxTM3o64zIDyUJZErwtLLu5qo/edit?usp=sharing"><i id="gSheet" class="fa-sharp-duotone fa-regular fa-file-spreadsheet"></i></a>
+         </div>
+         <div id="contOne">
+          <a href="invoiceTem.html"><i id="invoiSheet" class="fa-duotone fa-solid fa-file-invoice"></i></a>
+        </div>
+    </div>
 
     <script src="funcs.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
