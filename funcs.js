@@ -125,3 +125,23 @@ function setStyles(color, shadowColor){
 }
 
 
+
+
+// CLOSE OPEN BUTTON
+
+function tggleVis(button, target) {
+    if (target.style.display === 'block') {
+        target.style.display = 'none';
+        button.style.color = 'rgb(186, 6, 6)'
+    } else {
+        target.style.display = 'block';
+        button.style.color = 'green'
+    }
+}
+
+document.getElementById('opnClsBtn').addEventListener('click', () => {
+    tggleVis(document.getElementById('opnClsBtn'), document.getElementById('Items'));
+})
+document.getElementById('opnClsBtn2').addEventListener('click', () => {
+    tggleVis(document.getElementById('opnClsBtn2'), document.getElementById('Requests'));
+})

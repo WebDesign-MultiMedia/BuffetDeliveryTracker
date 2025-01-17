@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="invoice.css">
     <title>Document</title>
 </head>
-<body>
+<body id="bdy">
 
-    <h1 id="invoiceTitle">INVOICE</h1>
+    <h1 id="invoiceTitle">LOOK UP</h1>
 
     <!-- 
 
@@ -20,72 +20,50 @@
         Payment
     -->
 
-
+    <div id="lookUpCon">
+        <select id="searchField">
+            <option value="Date" id="dateSearch">Date</option>
+            <option value="Name">Name</option>
+            <option value="Address">Address</option>
+            <option value="Contact">Contact</option>
+        </select>
+        
+        <input type="text" id="searchValue" placeholder="Enter search value" />
+        <button onclick="fetchDataDisplay()" id="searchBtn">Search</button>
+        </div>
+    </div>
 
     <main id="invoiceContainer">
-    
-
         <section >
             <h2>Buffet Lucia's <br> Fiesta Mexicana</h2> 
-            <!-- <p><i class="fa-regular fa-location-dot"></i> 1980 UnionPort Rd</p>  -->
-             <a href="https://maps.app.goo.gl/Bx2W5GzuaLoykv9a9"><i class="fa-regular fa-location-dot"></i> : Bronx NY, 10462</a>
-            <a id="addy" href="tel:+3476862462"><i class="fa-solid fa-mobile-notch"></i> : (347) 686 - 2462</a> 
-        </section>
-     
-        <section id="date">
-            <h3>DATE:</h3>
-            <table id="dataTable1">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                </tbody>
-            </table>
+             <a id="Addy" href="https://maps.app.goo.gl/Bx2W5GzuaLoykv9a9"><i class="fa-regular fa-location-dot"></i> : Bronx NY, 10462</a>
+            <a id="cellNum" href="tel:+3476862462"><i class="fa-solid fa-mobile-notch"></i> : (347) 686 - 2462</a> 
         </section>
         
         <section id="billTo"> 
-                <h3>BILL TO:</h3>
+                <h3>CUSTOMER INFO :</h3>
                  <table id="dataTable2">
                     <thead>
                     <tr>
+                        <th>Date</th>
                         <th>Name</th>
                         <th>Address</th>
-                        <th>Contact</th>    
+                        <th>Contact</th>   
+                        <th>Items</th>   
+                        <th>Cost</th>   
+                        <th>Payment</th>   
                     </tr>
                     </thead>
                     <tbody>
-
                     </tbody>
                 </table> 
             </section>
-
-         <section id="desciption">
-            <h3>DESCRIPTION:</h3>
-            <table id="dataTable2">
-                <thead>
-                <tr>
-                <th>Items</th>
-                <th>Cost</th>
-                <th>Payment</th>
-                </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table> 
-        <!--  
-        </section>
-        <section id="amount">   
-            <h3>TOTAL:</h3>
-            
-        </section> -->
     </main>
-    <input type="text" id="searchName" placeholder="Enter Name">
-    <button onclick="fetchDataDisplay()">Search</button>
-    <section id="dates"> 
+    
+
+ 
+ 
+  
     <script src="invoice.js"></script>
 </body>
 </html>

@@ -76,7 +76,6 @@
         color: white;
         top: 1em;
         font-size:5vw;
-       
     }
     
 
@@ -88,7 +87,11 @@
         width: 40%;
         height: 20px;
         background-color: lightblue;
+        margin: 5px;
+        border: 1px solid red;
+        border-top: none;
     }
+
 
     #sbBtn{
         width: 40%;
@@ -119,6 +122,15 @@
         display: none;
     }
 
+    #Items, #Requests
+    {display: none;}
+
+    .fa-octagon-plus{
+        color: rgb(186, 6, 6);
+        background-color: whitesmoke;
+        border-radius: 100%;
+    }
+
 
     /* LOG SHEETS */
   
@@ -126,14 +138,13 @@
         display: none;
     }
     .excelLog{
-        width: 15%;
-        height:9%;
+        width: 20%;
         position: absolute;
-        top: 25em;
+        top: 10em;
+        left: 0;
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
-        border-radius: 5%;
     }
     #contOne{
         font-size: 2.3em;
@@ -142,14 +153,16 @@
 
     .fa-file-spreadsheet{
         color:rgb(12, 155, 12);
+        filter: drop-shadow(2px 2px 0px white);
         top: 8px;
         font-size: 14vw;
     }
 
-    .fa-file-invoice{
+    .fa-magnifying-glass-dollar{
         color: white;
+        filter: drop-shadow(2px 2px 0px black);
         top: 8px;
-        font-size: 13.5vw;
+        font-size: 13vw;
     }
 
 
