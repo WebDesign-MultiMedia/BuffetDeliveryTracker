@@ -18,8 +18,8 @@ const body = document.getElementById('bodyPg');
 const btn  = document.getElementById('letsTrack');
 
 
-btn.addEventListener('mouseenter', () => btnStyles('navy', 'white', '5px solid white'));
-btn.addEventListener('mouseleave', () => btnStyles('black', 'white', '5px solid white'));
+btn.addEventListener('mouseenter', () => btnStyles('navy', 'white', '1px solid gold'));
+btn.addEventListener('mouseleave', () => btnStyles('black', 'white', '1px solid white'));
 
 function btnStyles(bkg, color, border){
     btn.style.backgroundColor = bkg;
@@ -106,13 +106,16 @@ smtBtn.addEventListener('click', async (event)=>{
 
         // GOOGLE SHEET LOG SIDE BAR
 const gExcel = document.getElementById('gSheet');
-const invoiceSheet = document.getElementById('invoiSheet')
+const invoiceSheet = document.getElementById('invoiSheet');
+const mapView = document.getElementById('mapView');
 
 invoiceSheet.addEventListener('mouseenter', () => invStyle('red', 'white'));
 invoiceSheet.addEventListener('mouseleave', () => invStyle('white', 'red'));
 gExcel.addEventListener('mouseenter', () => setStyles('red', 'white'));
 gExcel.addEventListener('mouseleave', () => setStyles('white', 'red'));
 gExcel.addEventListener('click', () => setStyles('blue', 'white'));
+mapView.addEventListener('mouseenter', ()=> mapStyle('red', 'white'));
+mapView.addEventListener('mouseleave', ()=> mapStyle('white', 'red'));
 
 function invStyle(clr, sColor) {
     invoiceSheet.style.color = clr;
@@ -124,7 +127,10 @@ function setStyles(color, shadowColor){
     gExcel.style.filter = `drop-shadow(1px 1px 0px ${shadowColor})`;
 }
 
-
+function mapStyle(clR, shColor){
+    mapView.style.color = clR;
+    mapView.style.filter = `drop-shadow(1px 1px 0px ${shColor})`;
+}
 
 
 // CLOSE OPEN BUTTON
