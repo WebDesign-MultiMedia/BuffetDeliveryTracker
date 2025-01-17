@@ -32,7 +32,7 @@ btnClick.addEventListener('click', ()=> btnCli('none', 'center', 'navy', 'flex')
 
 function btnCli(display, justifyContent, background, dflex){
     const logSheets = document.getElementById('logExcelSheetG');
-    logSheets.style.display = 'block'
+    logSheets.style.display = 'inline-flex'
     imgLogo.style.display = display;
     title.style.display = display;
     cusform.style.display = dflex;
@@ -110,12 +110,12 @@ const invoiceSheet = document.getElementById('invoiSheet');
 const mapView = document.getElementById('mapView');
 
 invoiceSheet.addEventListener('mouseenter', () => invStyle('red', 'white'));
-invoiceSheet.addEventListener('mouseleave', () => invStyle('white', 'red'));
+invoiceSheet.addEventListener('mouseleave', () => invStyle('white', 'gold'));
 gExcel.addEventListener('mouseenter', () => setStyles('red', 'white'));
-gExcel.addEventListener('mouseleave', () => setStyles('white', 'red'));
+gExcel.addEventListener('mouseleave', () => setStyles('white', 'gold'));
 gExcel.addEventListener('click', () => setStyles('blue', 'white'));
 mapView.addEventListener('mouseenter', ()=> mapStyle('red', 'white'));
-mapView.addEventListener('mouseleave', ()=> mapStyle('white', 'red'));
+mapView.addEventListener('mouseleave', ()=> mapStyle('white', 'gold'));
 
 function invStyle(clr, sColor) {
     invoiceSheet.style.color = clr;
@@ -138,10 +138,10 @@ function mapStyle(clR, shColor){
 function tggleVis(button, target) {
     if (target.style.display === 'block') {
         target.style.display = 'none';
-        button.style.color = 'rgb(186, 6, 6)'
+        button.style.color = 'rgb(6, 186, 57)'
     } else {
         target.style.display = 'block';
-        button.style.color = 'green'
+        button.style.color = 'red'
     }
 }
 
