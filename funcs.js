@@ -1,5 +1,5 @@
 const title = document.getElementById('topContainer');
-const imgLogo = document.getElementById('logo');
+// const imgLogo = document.getElementById('logo');
 const cusform = document.getElementById('CustomerDetails');
 const topBtn = document.getElementById('letsTrack')
 
@@ -10,10 +10,10 @@ function showElement(appear, delay){
 }
 
 showElement(title,1000);
-showElement(imgLogo, 1000);
+// showElement(imgLogo, 1000);
 showElement(topBtn, 1000);
 
-// BOTTON
+// BOTTON LETS TRACK
 const body = document.getElementById('bodyPg');
 const btn  = document.getElementById('letsTrack');
 
@@ -33,7 +33,7 @@ btnClick.addEventListener('click', ()=> btnCli('none', 'center', 'navy', 'flex')
 function btnCli(display, justifyContent, background, dflex){
     const logSheets = document.getElementById('logExcelSheetG');
     logSheets.style.display = 'inline-flex'
-    imgLogo.style.display = display;
+    // imgLogo.style.display = display;
     title.style.display = display;
     cusform.style.display = dflex;
     cusform.style.justifyContent = justifyContent;
@@ -48,12 +48,17 @@ function btnCli(display, justifyContent, background, dflex){
 document.addEventListener("DOMContentLoaded", ()=>{
 const smtBtn = document.getElementById("sbBtn");
 
-smtBtn.addEventListener('mouseenter', ()=> btnHover('darkgreen','white'));
-smtBtn.addEventListener('mouseleave', ()=> btnHover('green','white'))
+smtBtn.addEventListener('mouseleave', ()=> btnHover('navy','gold'));
+smtBtn.addEventListener('mouseenter', ()=> btnHover('navy','red'))
 
 function btnHover(bkgrnd, texColor){
+    
+
     smtBtn.style.background = bkgrnd;
     smtBtn.style.color = texColor;
+    smtBtn.style.border = `2px solid ${texColor}`;
+    smtBtn.style.borderBottom = 'none';
+
 }
 
 
@@ -151,3 +156,11 @@ document.getElementById('opnClsBtn').addEventListener('click', () => {
 document.getElementById('opnClsBtn2').addEventListener('click', () => {
     tggleVis(document.getElementById('opnClsBtn2'), document.getElementById('Requests'));
 })
+
+
+
+
+// borderLine.forEach( elColor => {
+//     elColor.style.border = '2px solid blue';
+//     elColor.style.borderBottom = 'none';
+// });

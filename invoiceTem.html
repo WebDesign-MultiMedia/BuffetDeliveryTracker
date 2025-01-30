@@ -8,32 +8,98 @@
     <title>Document</title>
 </head>
 <body id="bdy">
+<!-- 
+    <a href="index.html"><i class="fa-duotone fa-solid fa-left-from-bracket" id="bkBtn"></i></a>
 
-    <h1 id="invoiceTitle">LOOK UP</h1>
+    <h1 id="invoiceTitle">LOOK UP</h1> -->
 
-    <!-- 
+    <div id="searchUpCus">
+        <i id="search" class="fa-duotone fa-regular fa-print-magnifying-glass"></i>
+    </div>
 
-        Items
-        Quantities
-        Requests
-        Cost
-        Payment
-    -->
-
-    <div id="lookUpCon">
+    <div id="lookUpCon" class="lookUp">
         <select id="searchField">
             <option value="Date" id="dateSearch">Date</option>
-            <option value="Name">Name</option>
+            <option value="Id">Id</option>
             <option value="Address">Address</option>
             <option value="Contact">Contact</option>
         </select>
-        
         <input type="text" id="searchValue" placeholder="Enter search value" />
         <button onclick="fetchDataDisplay()" id="searchBtn">Search</button>
-        </div>
     </div>
 
-    <main id="invoiceContainer">
+        <div id="logoInfo">
+            <h2>Buffet Lucia's <br> Fiesta Mexicana</h2> 
+             <a id="Addy" href="https://maps.app.goo.gl/Bx2W5GzuaLoykv9a9"><i class="fa-regular fa-location-dot"></i> Bronx NY, 10462</a>
+            <a id="cellNum" href="tel:+3476862462"><i class="fa-solid fa-mobile-notch"></i> (347) 686 - 2462</a> 
+        </div>
+
+      <div id="invoice">
+        <h1>INVOICE</h1>
+      </div>
+
+   
+ <div id="containerInvoice">
+    <main id="invoiceSec">
+        <div id="orderNumb">
+            <table id="orderNumData">
+                <thead>
+                <tr>
+                    <th>Order #</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="orderDate">
+            <table id="orderDateData">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="custInfo">
+            <h2>Customer Info</h2>
+            <table id="customerInfoData">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="custOrderDetail">
+            <h2>Customer Details</h2>
+            <table id="customerDetailData">
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Quan</th>
+                        <th>Cost</th>
+                        <th>Payment</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div></div>
+        <div></div>
+        
+    </main>
+</div>
+
+    <div id="logoImg">
+        <img id="logo" src="/BLFM-logo-2023.PNG" alt="" srcset="">
+    </div>
+
+    <!-- <main id="invoiceContainer">
         <section >
             <h2>Buffet Lucia's <br> Fiesta Mexicana</h2> 
              <a id="Addy" href="https://maps.app.goo.gl/Bx2W5GzuaLoykv9a9"><i class="fa-regular fa-location-dot"></i> : Bronx NY, 10462</a>
@@ -58,7 +124,7 @@
                     </tbody>
                 </table> 
             </section>
-    </main>
+    </main> -->
     
 
  

@@ -1,23 +1,247 @@
  body{
+
     background-color: navy;
-    border: 1px solid white;
+
+    /* border: 1px solid white; */
     border-right: none;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
-
+    
  }
 
-    /* INVOICE */
 
+    /* LOGO, NAME */
+    #logoInfo{
+        color: gold;
+        text-align: center;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-left: 0px;
+        position: relative;
+        top: -20px;
+    }
+
+    #logoInfo a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        position: relative;
+        left: 10px;
+        top: -15px;
+    }
+
+
+    /* INVOICE TITLE*/
+
+    #invoice{
+        color: gold;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 20px;
+        margin-top: 45px;
+    }
+
+    /* INVOICE FIELD */
+
+    #containerInvoice{
+        background-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        border: 1px solid white;
+        width: 100%;
+        height: 75%;
+        margin-top: -15px;
+    }
+
+
+        #invoiceSec{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        } 
+
+            /* Order Number */
+
+        #orderNumb{
+            /* background-color: aqua; */
+            color: white;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            left: 0;
+            margin-top: 170px;
+            margin-left: 20px;
+            font-size: 1.2em;
+        }
+
+        /* #orderNumb > table{
+            border-left: 1px solid red;
+        } */
+
+
+            /* Customer Date  */
+
+            #orderDate{
+                position: absolute;
+                /* background-color: aqua; */
+                color: white;
+                text-align: center;
+                right: 0;
+                top: 0;
+                margin-top: 166px;
+                font-size: 1.2em;
+                margin-right: 20px;
+            }
+/* 
+            #orderDate > table{
+                border-left: 1px solid red
+            } */
+
+            #orderDate > tbody{
+                background-color: antiquewhite;
+            }
+
+            /* Customer Info  */
+
+        #custInfo{
+            /* background-color: beige; */
+            color: white;
+            position: relative;
+            top: 3em;
+            text-align: center;
+            width: 90%;
+        }
+
+        /* #custInfo > table{
+
+            
+        } */
+
+        #custInfo table th{
+            font-size: 1.5em;
+            font-weight: 500;
+            border-left: 1px solid gold;
+            border-right: 1px solid gold;
+            border-bottom: 1px solid gold;
+            background-color: navy;
+            color: white;
+            width: 10%;
+        }
+
+             /* Customer Details */
+
+        #custOrderDetail{
+            /* background-color: palegreen; */
+            color: white;
+            position: relative;
+            top: 4em;
+            width: 90%;
+            text-align: center;
+        }
+
+        /* #custOrderDetail > table{
+            display: flex;
+            justify-content: center;
+
+        } */
+
+        #custOrderDetail table th{
+            font-size: 1.5em;
+            font-weight: 500;
+            border-left: 1px solid gold;
+            border-right: 1px solid gold;
+            border-bottom: 1px solid gold;
+            background-color: navy;
+            color: white;
+            width: 10%;
+        }
+
+        #custOrderDetail > tbody{
+            background-color: antiquewhite;
+        }
+
+    
+        /* Search Customer */
+        #lookUpCon{
+            display: none;
+        }
+
+
+        .lookUp{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            background-color: black;
+            border-radius: 5%;
+            border: 1px solid gold;
+            z-index: 4;
+        }
+
+        #searchField{
+            background-color: gold;
+            color: black;
+            text-align: center;
+            font-weight: 600;
+            position: relative;
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        #searchValue{
+            text-align: center;
+            
+            position: relative;
+        }
+
+        #searchBtn{
+            width: 55%;
+            position: relative;
+            left: 20%;
+            background-color: gold;
+
+        }
+
+    
+        #searchUpCus{
+            position: absolute;
+            width: 50%;
+            left: 52%;
+            top: 0;
+            margin-top: 10px;
+            z-index: 5;
+        }
+
+        .fa-print-magnifying-glass{
+            color: gold;
+            font-size: 2em;
+        }
+
+        #logo{
+            width: 30vw;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+
+
+
+
+/* 
     #invoiceTitle{
         text-align: right;
         padding-right: 20px;
         color: gold;
         font-family:'Times New Roman', Times, serif;
-    }
+    } */
 
     /* .fa-map-location-dot{
         color: white;
@@ -28,7 +252,7 @@
     } */
 
 
-    h3{
+    /* h3{
         position: relative;
         left: 25%;
         width: 50%;
@@ -41,9 +265,9 @@
         flex-direction: column;
     }   
 
-    section{
+    section{ */
         /* background-color: black; */
-        display: flex;
+        /* display: flex;
         height: auto;
         flex-direction: column;
         align-items:start;
@@ -88,18 +312,17 @@
         background-color: lightgoldenrodyellow;
         font-weight: 400;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
-    }
+    } */
 
     /*  LOOK UP SECTION */
 
  
 
-    #lookUpCon{
-        display: flex;
-        flex-direction: column;
-        width: 40%;
+
+    /* .fa-left-from-bracket{
+        color: gold;
+        font-size: 2em;
         position: absolute;
-        right: 2%;
-        padding-right: 5px;
-        z-index: 4;
-    }
+        left: 5px;
+        top: 5px;
+    } */

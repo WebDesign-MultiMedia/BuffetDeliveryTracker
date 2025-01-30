@@ -17,7 +17,7 @@
     <div class="topContainer" id="topContainer">  
         <div id="topHeader">
         <h1 id="titleHead">Delivery Tracker</h1>
-        <img src="BLFM-logo-2023.PNG" alt="logo"  id="logo">
+        <!-- <img src="BLFM-logo-2023.PNG" alt="logo"  id="logo"> -->
         <button class="button0" id="letsTrack">Let's Track</button>
         </div>
     </div>
@@ -30,34 +30,14 @@
         <!--label for="Date" class="form-label">Date</label> -->
         <label for="Date">Date</label>
         <input type="date" id="Date" name="Date" >
-        <span id="err" class="err-msgDate">
-            <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
-            Required !
-            <i class="fa-sharp fa-solid fa-arrow-up"></i>
-        </span>
         <!-- Customter Details -->
         <label for="cust">Name:</label>
         <input type="text" placeholder="Client Name" id="Name" name="Name" >
-        <!-- <div id="validErr">
-            <div id="ErrMessage">
-                <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
-                <span>Required !</span>
-            </div> -->
         </div>
         <label for="Contact">Contact Info</label>
         <input type="number" placeholder="Client Phone #" id="Contact" name="Contact" >
-        <span id="errContact" class="errMsg">
-            <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
-            Required !
-            <i class="fa-sharp fa-solid fa-arrow-up"></i>
-        </span>
         <label for="Address">Delivery Address:</label>
         <input type="text" placeholder="Client Address" id="Address" name="Address" >
-        <span>
-            <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
-            Required !
-            <i class="fa-sharp fa-solid fa-arrow-up"></i>
-        </span>
         </div>
         <!-- Order Detailas -->
         <label for="Items">Items Purchased: <i id="opnClsBtn" class="fa-solid fa-octagon-plus"></i></label>
@@ -69,11 +49,6 @@
         <textarea cols="20" rows="5" id="Requests" name="Requests"></textarea>
         <label for="Cost">Total Cost:</label>
         <input type="text" placeholder="$" id="Cost" name="Cost" >
-            <span>
-                <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
-                Required !
-                <i class="fa-sharp fa-solid fa-arrow-up"></i>
-            </span>
             <!-- Payment Method -->
         <label for="Payment">Payment Method</label>
         <select id="Payment" name="Payment" >
@@ -81,11 +56,6 @@
             <option value="Cash">Cash</option>
             <option value="Zelle">Zelle</option>
         </select>
-        <span>
-            <i class="fa-duotone fa-light fa-circle-exclamation" id="provideName"></i>
-            Required !
-            <i class="fa-sharp fa-solid fa-arrow-up"></i>
-        </span>
          <!-- Submit Button -->
           <br>
           <button type="submit" value="Submit" id="sbBtn">Submit</button>
