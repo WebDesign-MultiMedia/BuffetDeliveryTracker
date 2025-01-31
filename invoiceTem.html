@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2b46095725.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="invoice.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Lavishly+Yours&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body id="bdy">
@@ -18,11 +22,14 @@
     </div>
 
     <div id="lookUpCon" class="lookUp">
+
+
         <select id="searchField">
-            <option value="Date" id="dateSearch">Date</option>
-            <option value="Id">Id</option>
+            <option value="Id">ID</option>
+            <option value="Name">Name</option>
             <option value="Address">Address</option>
-            <option value="Contact">Contact</option>
+            <option value="Contact">Contact</option>            
+            <option value="Date" id="dateSearch">Date</option>
         </select>
         <input type="text" id="searchValue" placeholder="Enter search value" />
         <button onclick="fetchDataDisplay()" id="searchBtn">Search</button>
@@ -97,6 +104,10 @@
 
     <div id="logoImg">
         <img id="logo" src="/BLFM-logo-2023.PNG" alt="" srcset="">
+    </div>
+
+    <div id="backHomeIcone">
+        <a href="index.html"><i id="homeBtn" class="fa-duotone fa-regular fa-house-chimney"></i></a>
     </div>
 
     <!-- <main id="invoiceContainer">

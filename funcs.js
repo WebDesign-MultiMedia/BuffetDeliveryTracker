@@ -140,13 +140,24 @@ function mapStyle(clR, shColor){
 
 // CLOSE OPEN BUTTON
 
+const itemslabel = document.getElementById('itemsLabel');
+const specRequ = document.getElementById('specialRequ');
+
+itemslabel.style.color = 'gray';
+specRequ.style.color = 'gray';
+
 function tggleVis(button, target) {
     if (target.style.display === 'block') {
         target.style.display = 'none';
-        button.style.color = 'rgb(6, 186, 57)'
+        button.style.color = 'rgb(6, 186, 57)';
+        itemslabel.style.color = 'red';
+        specRequ.style.color = 'gray';
+
     } else {
         target.style.display = 'block';
-        button.style.color = 'red'
+        button.style.color = 'red';
+        itemslabel.style.color = 'white';
+        specRequ.style.color = 'white';
     }
 }
 
@@ -156,6 +167,7 @@ document.getElementById('opnClsBtn').addEventListener('click', () => {
 document.getElementById('opnClsBtn2').addEventListener('click', () => {
     tggleVis(document.getElementById('opnClsBtn2'), document.getElementById('Requests'));
 })
+
 
 
 

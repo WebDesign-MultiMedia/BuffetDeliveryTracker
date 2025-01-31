@@ -133,3 +133,10 @@ iconSearch.addEventListener('click', () =>{
         lookupField.style.display = 'block';
     }
 })
+
+
+    // BACK HOME
+    const homeBtn = document.getElementById('homeBtn');
+    homeBtn.addEventListener('mouseenter', () =>{
+        homeBtn.style.color = 'gold';
+    })

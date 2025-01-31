@@ -1,0 +1,15 @@
+#searchField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputContainer{
+    background-color: red;
+    text-align: center;
+}
+
+#IdInput{
+    display: none;
+}

@@ -23,7 +23,9 @@
         margin-left: 0px;
         position: relative;
         top: -20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+
 
     #logoInfo a{
         color: white;
@@ -32,18 +34,20 @@
         position: relative;
         left: 10px;
         top: -15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
 
     /* INVOICE TITLE*/
 
     #invoice{
-        color: black;
+        color: gold;
         position: absolute;
         top: 0;
         right: 0;
         margin-right: 20px;
         margin-top: 45px;
+        font-family:'Courier New', Courier, monospace;
     }
 
     /* INVOICE FIELD */
@@ -53,7 +57,7 @@
         border-radius: 5%;
         border: 1px solid white;
         width: 100%;
-        height: 75%;
+        height: 100%;
         margin-top: -15px;
     }
 
@@ -71,6 +75,7 @@
         #orderNumb{
             /* background-color: aqua; */
             color: white;
+            background-color: black;
             position: absolute;
             text-align: center;
             top: 0;
@@ -78,6 +83,8 @@
             margin-top: 170px;
             margin-left: 20px;
             font-size: 1.2em;
+            z-index: 6;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         /* #orderNumb > table{
@@ -89,7 +96,7 @@
 
             #orderDate{
                 position: absolute;
-                /* background-color: aqua; */
+                background-color: black;
                 color: white;
                 text-align: center;
                 right: 0;
@@ -97,15 +104,15 @@
                 margin-top: 166px;
                 font-size: 1.2em;
                 margin-right: 20px;
+                z-index: 4;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
 /* 
             #orderDate > table{
                 border-left: 1px solid red
             } */
 
-            #orderDate > tbody{
-                background-color: antiquewhite;
-            }
+
 
             /* Customer Info  */
 
@@ -118,10 +125,10 @@
             width: 90%;
         }
 
-        /* #custInfo > table{
-
-            
-        } */
+        #custInfo > h2{
+            color: white;
+            border-bottom: 1px solid gold;
+        }
 
         #custInfo table th{
             font-size: 1.5em;
@@ -129,9 +136,10 @@
             border-left: 1px solid gold;
             border-right: 1px solid gold;
             border-bottom: 1px solid gold;
-            background-color: navy;
+            /* background-color: navy; */
             color: white;
             width: 10%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
              /* Customer Details */
@@ -145,11 +153,10 @@
             text-align: center;
         }
 
-        /* #custOrderDetail > table{
-            display: flex;
-            justify-content: center;
-
-        } */
+        #custOrderDetail > h2{
+            color: white;
+            border-bottom: 1px solid gold;
+        }
 
         #custOrderDetail table th{
             font-size: 1.5em;
@@ -157,9 +164,10 @@
             border-left: 1px solid gold;
             border-right: 1px solid gold;
             border-bottom: 1px solid gold;
-            background-color: navy;
+            /* background-color: navy; */
             color: white;
             width: 10%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         #custOrderDetail > tbody{
@@ -179,9 +187,9 @@
             position: absolute;
             left: 50%;
             top: 10%;
-            background-color: black;
+            background-color: navy;
             border-radius: 5%;
-            border: 1px solid gold;
+            /* border: 1px solid gold; */
             z-index: 4;
         }
 
@@ -197,7 +205,6 @@
 
         #searchValue{
             text-align: center;
-            
             position: relative;
         }
 
@@ -233,8 +240,21 @@
         }
 
 
+        /* BACK HOME */
 
+        #backHomeIcone{
+            position:fixed;
+            bottom: 10px;
+            z-index: 9;
+            margin-left: 15px;
+        }
 
+        .fa-house-chimney{
+            position: sticky;
+            font-size: 2em;
+            z-index: 8;
+            color: white;
+        }
 
 /* 
     #invoiceTitle{

@@ -53,7 +53,7 @@
          font-weight: bolder;
          border-radius: 5%;
          /* filter: drop-shadow(5px 3px 5px gold); */
-         font-size: 2em;
+         font-size: 6vw;
          display: none;
          font-family: "Rubik Vinyl", serif;
          font-weight: 400;
@@ -103,8 +103,8 @@
     }
 
     input::placeholder{
-        color: gold;
-        filter: drop-shadow(1px 1px 1px black);
+        color: black;
+        font-weight: 500;
         text-align: center;
     }
 
@@ -181,14 +181,14 @@
         font-size: 14vw;
     }
 
-    .fa-magnifying-glass-dollar{
+    .fa-file-invoice{
         color: white;
         filter: drop-shadow(2px 2px 0px black);
         top: 8px;
         font-size: 13vw;
     }
 
-    .fa-map-location-dot{
+    .fa-file-invoice-dollar{
         color: white;
         filter: drop-shadow(2px 2px 0px black);
         top: 8px;
